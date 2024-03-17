@@ -14,8 +14,8 @@ app.get("/", (req, res) => {
 });
 
 app.post("/submit", (req, res) => {
-    var sang1 = adj[Math.floor(Math.random() * adj.length)]
-    var sang2 = noun[Math.floor(Math.random() * noun.length)]
+    let sang1 = adj[Math.floor(Math.random() * adj.length)]
+    let sang2 = noun[Math.floor(Math.random() * noun.length)]
     res.render("index.ejs", { a: sang1, b: sang2 })
 
 });
